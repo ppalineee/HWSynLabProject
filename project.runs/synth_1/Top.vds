@@ -1,0 +1,1807 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri May 29 17:12:32 2020
+# Process ID: 3516
+# Current directory: C:/Users/Palinee/Desktop/project/project.runs/synth_1
+# Command line: vivado.exe -log Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top.tcl
+# Log file: C:/Users/Palinee/Desktop/project/project.runs/synth_1/Top.vds
+# Journal file: C:/Users/Palinee/Desktop/project/project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Top.tcl -notrace
+Command: synth_design -top Top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 856 
+WARNING: [Synth 8-2611] redeclaration of ansi port RData is not allowed [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart.v:177]
+WARNING: [Synth 8-2490] overwriting previous definition of module uart [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:198]
+WARNING: [Synth 8-2490] overwriting previous definition of module fifo [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:610]
+WARNING: [Synth 8-2611] redeclaration of ansi port clkDiv is not allowed [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:706]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 393.727 ; gain = 112.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:3]
+INFO: [Synth 8-6157] synthesizing module 'clkDiv' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:701]
+INFO: [Synth 8-6155] done synthesizing module 'clkDiv' (1#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:701]
+WARNING: [Synth 8-324] index 29 out of range [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:77]
+INFO: [Synth 8-3876] $readmem data file 'pal24bit.mem' is read successfully [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:436]
+INFO: [Synth 8-6157] synthesizing module 'vga640x480' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/vga640x480.v:9]
+	Parameter HSYNCSTART bound to: 16 - type: integer 
+	Parameter HSYNCEND bound to: 112 - type: integer 
+	Parameter HACTIVESTART bound to: 160 - type: integer 
+	Parameter HACTIVEEND bound to: 800 - type: integer 
+	Parameter VSYNCSTART bound to: 10 - type: integer 
+	Parameter VSYNCEND bound to: 12 - type: integer 
+	Parameter VACTIVESTART bound to: 45 - type: integer 
+	Parameter VACTIVEEND bound to: 525 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga640x480' (2#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/vga640x480.v:9]
+INFO: [Synth 8-6157] synthesizing module 'uart_fifo' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:12]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:198]
+	Parameter CLOCK_DIVIDE bound to: 217 - type: integer 
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_CHECK_START bound to: 1 - type: integer 
+	Parameter RX_READ_BITS bound to: 2 - type: integer 
+	Parameter RX_CHECK_STOP bound to: 3 - type: integer 
+	Parameter RX_DELAY_RESTART bound to: 4 - type: integer 
+	Parameter RX_ERROR bound to: 5 - type: integer 
+	Parameter RX_RECEIVED bound to: 6 - type: integer 
+	Parameter TX_IDLE bound to: 0 - type: integer 
+	Parameter TX_SENDING bound to: 1 - type: integer 
+	Parameter TX_DELAY_RESTART bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:277]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:348]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (3#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:198]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:610]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_EXP bound to: 3 - type: integer 
+	Parameter ADDR_DEPTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (4#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:610]
+INFO: [Synth 8-6155] done synthesizing module 'uart_fifo' (5#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/uart_fifo.v:12]
+INFO: [Synth 8-6157] synthesizing module 'FightBarPin' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FightBarPin.v:23]
+	Parameter stepX bound to: 1 - type: integer 
+	Parameter stepY bound to: 0 - type: integer 
+	Parameter autoplay bound to: 1 - type: integer 
+	Parameter FrameWidth bound to: 3 - type: integer 
+	Parameter FrameHeight bound to: 35 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FightBarPin' (6#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FightBarPin.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HpSprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpSprite.v:23]
+	Parameter FrameWidth bound to: 100 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HpSprite' (7#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpSprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hp1Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Hp1Sprite.v:23]
+	Parameter FrameWidth bound to: 50 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Hp1Sprite' (8#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Hp1Sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hp2Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Hp2Sprite.v:23]
+	Parameter FrameWidth bound to: 50 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Hp2Sprite' (9#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Hp2Sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Hp3Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Hp3Sprite.v:23]
+	Parameter FrameWidth bound to: 50 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Hp3Sprite' (10#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Hp3Sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'AlienSprites' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/AlienSprites.v:9]
+	Parameter A1Width bound to: 45 - type: integer 
+	Parameter A1Height bound to: 30 - type: integer 
+	Parameter A2Width bound to: 50 - type: integer 
+	Parameter A2Height bound to: 42 - type: integer 
+	Parameter A3Width bound to: 60 - type: integer 
+	Parameter A3Height bound to: 42 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Alien1Rom' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien1Rom.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ROM_STYLE = "block" *) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien1Rom.v:15]
+INFO: [Synth 8-3876] $readmem data file 'Alien1.mem' is read successfully [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien1Rom.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Alien1Rom' (11#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien1Rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Alien2Rom' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien2Rom.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ROM_STYLE = "block" *) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien2Rom.v:15]
+INFO: [Synth 8-3876] $readmem data file 'Alien2.mem' is read successfully [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien2Rom.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Alien2Rom' (12#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien2Rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'Alien3Rom' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien3Rom.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ROM_STYLE = "block" *) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien3Rom.v:15]
+INFO: [Synth 8-3876] $readmem data file 'Alien3.mem' is read successfully [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien3Rom.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'Alien3Rom' (13#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Alien3Rom.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'AlienSprites' (14#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/AlienSprites.v:9]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Alien C - type: string 
+INFO: [Synth 8-638] synthesizing module 'Font_Rom' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Font_Rom.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Font_Rom' (15#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Font_Rom.vhd:40]
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized0' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Alien M - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized0' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized1' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Alien Y - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized1' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized2' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: YOU WIN! - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized2' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized3' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: YOU LOSE! - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized3' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized4' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: UNDERTALE-LIKE GAME - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized4' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized5' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Press Spacebar - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized5' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized6' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Palinee - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized6' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized7' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Pornapat - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized7' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized8' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Vachirachat - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized8' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized9' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Isaree - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized9' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized10' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Warintorn - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized10' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized11' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Setsiripaiboon - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized11' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized12' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Sudjaipraparat - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized12' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized13' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Sawaddiwat na ayuttaya - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized13' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized14' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Jirapogchapone - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized14' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized15' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: Tantirittisak - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized15' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized16' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: 6030373721 - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized16' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized17' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: 6030394921 - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized17' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized18' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: 6030506921 - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized18' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized19' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: 6030654021 - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized19' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-638] synthesizing module 'Pixel_On_Text2__parameterized20' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+	Parameter displayText bound to: 6031053021 - type: string 
+WARNING: [Synth 8-6014] Unused sequential element inXRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:80]
+WARNING: [Synth 8-6014] Unused sequential element inYRange_reg was removed.  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:81]
+WARNING: [Synth 8-5863] Implementing Library version of Mod/Rem due to signed path. This typically leads to poor QOR. Check RTL to see if unsigned path for the operator is possible  [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'Pixel_On_Text2__parameterized20' (16#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:47]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:321]
+INFO: [Synth 8-6157] synthesizing module 'HeartSprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HeartSprite.v:9]
+	Parameter stepX bound to: 2 - type: integer 
+	Parameter stepY bound to: 3 - type: integer 
+	Parameter autoplay bound to: 1 - type: integer 
+	Parameter HeartWidth bound to: 22 - type: integer 
+	Parameter HeartHeight bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'HeartRom' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HeartRom.v:9]
+INFO: [Synth 8-5534] Detected attribute (* ROM_STYLE = "block" *) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HeartRom.v:15]
+INFO: [Synth 8-3876] $readmem data file 'heart.mem' is read successfully [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HeartRom.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'HeartRom' (17#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HeartRom.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'HeartSprite' (18#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HeartSprite.v:9]
+INFO: [Synth 8-6157] synthesizing module 'FrameSprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FrameSprite.v:23]
+	Parameter FrameWidth bound to: 65 - type: integer 
+	Parameter FrameHeight bound to: 65 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FrameSprite' (19#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FrameSprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HpFrameSprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrameSprite.v:23]
+	Parameter FrameWidth bound to: 100 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HpFrameSprite' (20#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrameSprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HpFrame1Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrame1Sprite.v:23]
+	Parameter FrameWidth bound to: 50 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HpFrame1Sprite' (21#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrame1Sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HpFrame2Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrame2Sprite.v:23]
+	Parameter FrameWidth bound to: 50 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HpFrame2Sprite' (22#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrame2Sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HpFrame3Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrame3Sprite.v:23]
+	Parameter FrameWidth bound to: 50 - type: integer 
+	Parameter FrameHeight bound to: 7 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'HpFrame3Sprite' (23#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/HpFrame3Sprite.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FightBarSprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FightBar.v:23]
+	Parameter FrameHeight bound to: 30 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'FightBarSprite' (24#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FightBar.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Bullet1Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet1Sprite.v:3]
+	Parameter stepX bound to: 1 - type: integer 
+	Parameter stepY bound to: 1 - type: integer 
+	Parameter autoplay bound to: 1 - type: integer 
+	Parameter BulletRadius bound to: 3 - type: integer 
+	Parameter upperbound bound to: 278 - type: integer 
+	Parameter lowerbound bound to: 401 - type: integer 
+	Parameter leftbound bound to: 245 - type: integer 
+	Parameter rightbound bound to: 369 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Bullet1Sprite' (25#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet1Sprite.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Bullet2Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet2Sprite.v:3]
+	Parameter stepX bound to: 1 - type: integer 
+	Parameter stepY bound to: 3 - type: integer 
+	Parameter autoplay bound to: 1 - type: integer 
+	Parameter BulletRadius bound to: 3 - type: integer 
+	Parameter upperbound bound to: 278 - type: integer 
+	Parameter lowerbound bound to: 401 - type: integer 
+	Parameter leftbound bound to: 245 - type: integer 
+	Parameter rightbound bound to: 369 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Bullet2Sprite' (26#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet2Sprite.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Bullet3Sprite' [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet3Sprite.v:3]
+	Parameter stepX bound to: 1 - type: integer 
+	Parameter stepY bound to: 2 - type: integer 
+	Parameter autoplay bound to: 1 - type: integer 
+	Parameter BulletRadius bound to: 3 - type: integer 
+	Parameter upperbound bound to: 278 - type: integer 
+	Parameter lowerbound bound to: 401 - type: integer 
+	Parameter leftbound bound to: 245 - type: integer 
+	Parameter rightbound bound to: 369 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Bullet3Sprite' (27#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet3Sprite.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (28#1) [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Top.v:3]
+WARNING: [Synth 8-3331] design HeartSprite has unconnected port BR
+WARNING: [Synth 8-3331] design HeartSprite has unconnected port BL
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 469.379 ; gain = 188.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 469.379 ; gain = 188.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 469.379 ; gain = 188.543
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Palinee/Desktop/project/project.srcs/constrs_1/new/basys3.xdc]
+Finished Parsing XDC File [C:/Users/Palinee/Desktop/project/project.srcs/constrs_1/new/basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Palinee/Desktop/project/project.srcs/constrs_1/new/basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 814.215 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 814.215 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 814.215 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 814.215 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.215 ; gain = 533.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.215 ; gain = 533.379
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 814.215 ; gain = 533.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rx_countdown0" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "memory_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/FightBarPin.v:58]
+INFO: [Synth 8-5546] ROM "FrameX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5547] Trying to map ROM "A1memory_array" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "A2memory_array" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5547] Trying to map ROM "A3memory_array" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Pixel_On_Text2.vhd:60]
+INFO: [Synth 8-5547] Trying to map ROM "memory_array" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet1Sprite.v:47]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet1Sprite.v:47]
+INFO: [Synth 8-5546] ROM "BulletX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet2Sprite.v:47]
+INFO: [Synth 8-5546] ROM "BulletX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet3Sprite.v:47]
+INFO: [Synth 8-5546] ROM "BulletX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_fight_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "act" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "act" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "totalhit1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_fight_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "act" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "act" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "totalhit1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "damage" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 814.215 ; gain = 533.379
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'fdivTarget' (clkDiv) to 'genblk1[25].fdiv'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 44    
+	   2 Input     32 Bit       Adders := 54    
+	   3 Input     32 Bit       Adders := 28    
+	   2 Input     31 Bit       Adders := 22    
+	   2 Input     22 Bit       Adders := 5     
+	   2 Input     17 Bit       Adders := 1     
+	   3 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 5     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 10    
+	   2 Input      9 Bit       Adders := 8     
+	   4 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 22    
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 44    
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 6     
+	   3 Input      4 Bit       Adders := 15    
+	   2 Input      3 Bit       Adders := 10    
++---Registers : 
+	               22 Bit    Registers := 4     
+	               16 Bit    Registers := 1     
+	               12 Bit    Registers := 14    
+	               11 Bit    Registers := 5     
+	               10 Bit    Registers := 7     
+	                9 Bit    Registers := 9     
+	                8 Bit    Registers := 46    
+	                6 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 94    
++---Multipliers : 
+	                32x32  Multipliers := 6     
++---ROMs : 
+	                              ROMs := 26    
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 22    
+	   2 Input     22 Bit        Muxes := 2     
+	   7 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 10    
+	   8 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 4     
+	   8 Input      7 Bit        Muxes := 2     
+	   9 Input      7 Bit        Muxes := 2     
+	  19 Input      7 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	  22 Input      7 Bit        Muxes := 1     
+	  13 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 6     
+	   4 Input      6 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 5     
+	   2 Input      5 Bit        Muxes := 113   
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 26    
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 9     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 13    
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 112   
+	   4 Input      1 Bit        Muxes := 12    
+	   8 Input      1 Bit        Muxes := 3     
+	  10 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   4 Input      9 Bit       Adders := 1     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 2     
+	   4 Input     11 Bit        Muxes := 3     
+	   2 Input     11 Bit        Muxes := 6     
+	  11 Input      8 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 26    
+	   8 Input      1 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 1     
+Module vga640x480 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 3     
+Module uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   8 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+Module fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 8     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+Module uart_fifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module clkDiv 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module FightBarPin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module HpSprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Hp1Sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Hp2Sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Hp3Sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Alien1Rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Alien2Rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Alien3Rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module AlienSprites 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
+Module Font_Rom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Pixel_On_Text2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  19 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module Pixel_On_Text2__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized8 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized9 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 2     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   6 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      3 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized10 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized11 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized12 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized13 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  22 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+Module Pixel_On_Text2__parameterized14 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized15 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  13 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized16 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized17 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized18 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized19 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module Pixel_On_Text2__parameterized20 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     31 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   3 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     31 Bit        Muxes := 1     
+	  10 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 5     
+	   2 Input      4 Bit        Muxes := 1     
+Module HeartRom 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module HeartSprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     12 Bit       Adders := 1     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module FrameSprite 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module HpFrameSprite 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module HpFrame1Sprite 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module HpFrame2Sprite 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module HpFrame3Sprite 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+Module FightBarSprite 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     12 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+Module Bullet1Sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module Bullet2Sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   4 Input      9 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module Bullet3Sprite 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     22 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               22 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "act" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "totalhit1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_fight_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rx_fifo/memory_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_fifo/memory_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "FrameX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "BulletX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet1Sprite.v:77]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet1Sprite.v:77]
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+INFO: [Synth 8-5546] ROM "BulletX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet2Sprite.v:77]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet2Sprite.v:77]
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+INFO: [Synth 8-5546] ROM "BulletX" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet3Sprite.v:77]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Palinee/Desktop/project/project.srcs/sources_1/new/Bullet3Sprite.v:77]
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: Generating DSP rgb2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+DSP Report: operator rgb2 is absorbed into DSP rgb2.
+INFO: [Synth 8-5546] ROM "act" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "totalhit1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "is_fight_done" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design HeartSprite has unconnected port BR
+WARNING: [Synth 8-3331] design HeartSprite has unconnected port BL
+INFO: [Synth 8-3886] merging instance 'tx_byte_reg[7]' (FDRE) to 'tx_byte_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tx_byte_reg[5] )
+INFO: [Synth 8-3886] merging instance 'act_reg[6]' (FDR) to 'act_reg[7]'
+INFO: [Synth 8-3886] merging instance 'act_reg[7]' (FDR) to 'act_reg[5]'
+INFO: [Synth 8-3886] merging instance 'act_reg[5]' (FDR) to 'act_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\act_reg[4] )
+INFO: [Synth 8-3886] merging instance 'damage_reg[2]' (FDE) to 'damage_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[0]' (FDRE) to 'Bullet3Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[0]' (FDSE) to 'Bullet2Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[0]' (FDSE) to 'Bullet1Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FightBarDisplay/rgb_reg[0]' (FDRE) to 'FightBarDisplay/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[0]' (FDRE) to 'Hp3Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[0]' (FDSE) to 'Hp2Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[0]' (FDSE) to 'Hp1Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[0]' (FDRE) to 'HpDisplay/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'HpFrame3Display/rgb_reg[0]' (FDRE) to 'HpFrame3Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[0]' (FDSE) to 'HpFrame2Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[0]' (FDSE) to 'HpFrame1Display/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[0]' (FDRE) to 'HpFrameDisplay/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[0]' (FDSE) to 'FrameDisplay/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[0]' (FDSE) to 'FightBarPinDisplay/rgb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[1]' (FDRE) to 'Bullet3Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[1]' (FDSE) to 'Bullet2Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[1]' (FDSE) to 'Bullet1Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'FightBarDisplay/rgb_reg[1]' (FDRE) to 'FightBarDisplay/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[1]' (FDRE) to 'Hp3Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[1]' (FDSE) to 'Hp2Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[1]' (FDSE) to 'Hp1Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[1]' (FDRE) to 'HpDisplay/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HpFrame3Display/rgb_reg[1]' (FDRE) to 'HpFrame3Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[1]' (FDSE) to 'HpFrame2Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[1]' (FDSE) to 'HpFrame1Display/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[1]' (FDRE) to 'HpFrameDisplay/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[1]' (FDSE) to 'FrameDisplay/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[1]' (FDSE) to 'FightBarPinDisplay/rgb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[2]' (FDRE) to 'Bullet3Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[2]' (FDSE) to 'Bullet2Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[2]' (FDSE) to 'Bullet1Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FightBarDisplay/rgb_reg[2]' (FDRE) to 'FightBarDisplay/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[2]' (FDRE) to 'Hp3Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[2]' (FDSE) to 'Hp2Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[2]' (FDSE) to 'Hp1Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[2]' (FDRE) to 'HpDisplay/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HpFrame3Display/rgb_reg[2]' (FDRE) to 'HpFrame3Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[2]' (FDSE) to 'HpFrame2Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[2]' (FDSE) to 'HpFrame1Display/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[2]' (FDRE) to 'HpFrameDisplay/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[2]' (FDSE) to 'FrameDisplay/rgb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[2]' (FDSE) to 'FightBarPinDisplay/rgb_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Bullet3Display/\rgb_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[3]' (FDSE) to 'Bullet2Display/rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[3]' (FDSE) to 'Bullet1Display/rgb_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (FightBarDisplay/\rgb_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Hp3Display/\rgb_reg[3] )
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[3]' (FDSE) to 'Hp2Display/rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[3]' (FDSE) to 'Hp1Display/rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[3]' (FDRE) to 'HpDisplay/rgb_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (HpFrame3Display/\rgb_reg[3] )
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[3]' (FDSE) to 'HpFrame2Display/rgb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[3]' (FDSE) to 'HpFrame1Display/rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[3]' (FDRE) to 'HpFrameDisplay/rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[3]' (FDSE) to 'FrameDisplay/rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[3]' (FDSE) to 'FightBarPinDisplay/rgb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[4]' (FDSE) to 'Bullet3Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[4]' (FDRE) to 'Bullet2Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[4]' (FDSE) to 'Bullet1Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'FightBarDisplay/rgb_reg[4]' (FDRE) to 'FightBarDisplay/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[4]' (FDSE) to 'Hp3Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[4]' (FDRE) to 'Hp2Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[4]' (FDSE) to 'Hp1Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[4]' (FDRE) to 'HpDisplay/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'HpFrame3Display/rgb_reg[4]' (FDSE) to 'HpFrame3Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[4]' (FDRE) to 'HpFrame2Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[4]' (FDSE) to 'HpFrame1Display/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[4]' (FDRE) to 'HpFrameDisplay/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[4]' (FDSE) to 'FrameDisplay/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[4]' (FDSE) to 'FightBarPinDisplay/rgb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[5]' (FDSE) to 'Bullet3Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[5]' (FDRE) to 'Bullet2Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[5]' (FDSE) to 'Bullet1Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'FightBarDisplay/rgb_reg[5]' (FDRE) to 'FightBarDisplay/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[5]' (FDSE) to 'Hp3Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[5]' (FDRE) to 'Hp2Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[5]' (FDSE) to 'Hp1Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[5]' (FDRE) to 'HpDisplay/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'HpFrame3Display/rgb_reg[5]' (FDSE) to 'HpFrame3Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[5]' (FDRE) to 'HpFrame2Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[5]' (FDSE) to 'HpFrame1Display/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[5]' (FDRE) to 'HpFrameDisplay/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[5]' (FDSE) to 'FrameDisplay/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[5]' (FDSE) to 'FightBarPinDisplay/rgb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[6]' (FDSE) to 'Bullet3Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Bullet2Display/rgb_reg[6]' (FDRE) to 'Bullet2Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Bullet1Display/rgb_reg[6]' (FDSE) to 'Bullet1Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[6]' (FDSE) to 'Hp3Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Hp2Display/rgb_reg[6]' (FDRE) to 'Hp2Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Hp1Display/rgb_reg[6]' (FDSE) to 'Hp1Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'HpDisplay/rgb_reg[6]' (FDRE) to 'HpDisplay/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'HpFrame3Display/rgb_reg[6]' (FDSE) to 'HpFrame3Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'HpFrame2Display/rgb_reg[6]' (FDRE) to 'HpFrame2Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'HpFrame1Display/rgb_reg[6]' (FDSE) to 'HpFrame1Display/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'HpFrameDisplay/rgb_reg[6]' (FDRE) to 'HpFrameDisplay/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'FrameDisplay/rgb_reg[6]' (FDSE) to 'FrameDisplay/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'FightBarPinDisplay/rgb_reg[6]' (FDSE) to 'FightBarPinDisplay/rgb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'Bullet3Display/rgb_reg[7]' (FDSE) to 'Bullet3Display/rgb_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Bullet2Display/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Bullet1Display/\rgb_reg[7] )
+INFO: [Synth 8-3886] merging instance 'Hp3Display/rgb_reg[7]' (FDSE) to 'Hp3Display/rgb_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Hp2Display/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Hp1Display/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (HpDisplay/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (HpFrame2Display/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (HpFrame1Display/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (HpFrameDisplay/\rgb_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Bullet3Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Bullet2Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Bullet1Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (FightBarDisplay/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Hp3Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (Hp2Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Hp1Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (HpDisplay/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (HpFrame3Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (HpFrame2Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (HpFrame1Display/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (HpFrameDisplay/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (FrameDisplay/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (FightBarPinDisplay/\rgb_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (uart_fifo/\uart_inst/tx_data_reg[7] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 886.539 ; gain = 605.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------------------+---------------+----------------+
+|Module Name | RTL Object                 | Depth x Width | Implemented As | 
++------------+----------------------------+---------------+----------------+
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | alien1/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | alien2/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | alien3/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | end1/FontRom/fontRow_reg   | 2048x8        | Block RAM      | 
+|Top         | end2/FontRom/fontRow_reg   | 2048x8        | Block RAM      | 
+|Top         | title/FontRom/fontRow_reg  | 2048x8        | Block RAM      | 
+|Top         | fname1/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | fname2/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | fname3/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | fname4/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | fname5/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | lname1/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | lname2/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | lname3/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | lname4/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | lname5/FontRom/fontRow_reg | 2048x8        | Block RAM      | 
+|Top         | no1/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Top         | no2/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Top         | no3/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Top         | no4/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Top         | no5/FontRom/fontRow_reg    | 2048x8        | Block RAM      | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
+|Top         | p_0_out                    | 256x8         | LUT            | 
++------------+----------------------------+---------------+----------------+
+
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Bullet1Sprite | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet1Sprite | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet2Sprite | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Bullet3Sprite | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance ADisplay/i_0/Alien1VRom/o_A1data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ADisplay/i_1/Alien2VRom/o_A2data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ADisplay/i_2/Alien3VRom/o_A3data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance HeartDisplay/i_0/HeartVRom/o_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_3/alien1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_4/alien2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_5/alien3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_6/end1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_7/end2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_8/title/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_9/press_spacebar/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_10/fname1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_11/fname2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_12/fname3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_13/fname4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/fname5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_15/lname1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_16/lname2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_17/lname3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_18/lname4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_19/lname5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_20/no1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_21/no2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_22/no3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_23/no4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_24/no5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 893.414 ; gain = 612.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:17 ; elapsed = 00:01:19 . Memory (MB): peak = 1122.539 ; gain = 841.703
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance ADisplay/Alien1VRom/o_A1data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ADisplay/Alien2VRom/o_A2data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance ADisplay/Alien3VRom/o_A3data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance HeartDisplay/HeartVRom/o_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance alien1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance alien1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance alien3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance alien3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance end2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance end2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance press_spacebar/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance press_spacebar/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fname2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fname2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fname4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance fname4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance lname1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance lname1/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance lname3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance lname3/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance lname5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance lname5/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance no2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance no2/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance no4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance no4/FontRom/fontRow_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |   249|
+|3     |DSP48E1    |    18|
+|4     |LUT1       |    90|
+|5     |LUT2       |   478|
+|6     |LUT3       |   177|
+|7     |LUT4       |   268|
+|8     |LUT5       |   501|
+|9     |LUT6       |   883|
+|10    |MUXF7      |     4|
+|11    |RAMB18E1   |     1|
+|12    |RAMB18E1_1 |     1|
+|13    |RAMB18E1_2 |     1|
+|14    |RAMB18E1_3 |     1|
+|15    |RAMB18E1_4 |    11|
+|16    |FDRE       |   601|
+|17    |FDSE       |     6|
+|18    |IBUF       |     3|
+|19    |OBUF       |    15|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------------------+------+
+|      |Instance             |Module                          |Cells |
++------+---------------------+--------------------------------+------+
+|1     |top                  |                                |  3310|
+|2     |  HpDisplay          |HpSprite                        |    15|
+|3     |  HpFrame1Display    |HpFrame1Sprite                  |     1|
+|4     |  HpFrame2Display    |HpFrame2Sprite                  |     1|
+|5     |  ADisplay           |AlienSprites                    |   270|
+|6     |    Alien1VRom       |Alien1Rom                       |    72|
+|7     |    Alien2VRom       |Alien2Rom                       |    62|
+|8     |    Alien3VRom       |Alien3Rom                       |    58|
+|9     |  Bullet1Display     |Bullet1Sprite                   |   203|
+|10    |  Bullet2Display     |Bullet2Sprite                   |   200|
+|11    |  Bullet3Display     |Bullet3Sprite                   |   207|
+|12    |  FightBarDisplay    |FightBarSprite                  |    25|
+|13    |  FightBarPinDisplay |FightBarPin                     |   115|
+|14    |  FrameDisplay       |FrameSprite                     |     2|
+|15    |  HeartDisplay       |HeartSprite                     |   226|
+|16    |    HeartVRom        |HeartRom                        |    58|
+|17    |  Hp1Display         |Hp1Sprite                       |    21|
+|18    |  Hp2Display         |Hp2Sprite                       |    17|
+|19    |  Hp3Display         |Hp3Sprite                       |    16|
+|20    |  HpFrame3Display    |HpFrame3Sprite                  |     2|
+|21    |  HpFrameDisplay     |HpFrameSprite                   |     2|
+|22    |  alien1             |Pixel_On_Text2                  |    14|
+|23    |    FontRom          |Font_Rom_35                     |     3|
+|24    |  alien2             |Pixel_On_Text2__parameterized0  |     6|
+|25    |  alien3             |Pixel_On_Text2__parameterized1  |     5|
+|26    |    FontRom          |Font_Rom_34                     |     1|
+|27    |  display            |vga640x480                      |  1004|
+|28    |  end1               |Pixel_On_Text2__parameterized2  |     4|
+|29    |  end2               |Pixel_On_Text2__parameterized3  |     8|
+|30    |    FontRom          |Font_Rom_33                     |     3|
+|31    |  fdivTarget         |clkDiv                          |     2|
+|32    |  fname1             |Pixel_On_Text2__parameterized6  |     5|
+|33    |  fname2             |Pixel_On_Text2__parameterized7  |     5|
+|34    |    FontRom          |Font_Rom_32                     |     1|
+|35    |  fname3             |Pixel_On_Text2__parameterized8  |     4|
+|36    |  fname4             |Pixel_On_Text2__parameterized9  |     8|
+|37    |    FontRom          |Font_Rom_31                     |     1|
+|38    |  fname5             |Pixel_On_Text2__parameterized10 |     4|
+|39    |  \genblk1[0].fdiv   |clkDiv_0                        |     2|
+|40    |  \genblk1[10].fdiv  |clkDiv_1                        |     2|
+|41    |  \genblk1[11].fdiv  |clkDiv_2                        |     2|
+|42    |  \genblk1[12].fdiv  |clkDiv_3                        |     2|
+|43    |  \genblk1[13].fdiv  |clkDiv_4                        |     2|
+|44    |  \genblk1[14].fdiv  |clkDiv_5                        |     2|
+|45    |  \genblk1[15].fdiv  |clkDiv_6                        |     2|
+|46    |  \genblk1[16].fdiv  |clkDiv_7                        |     2|
+|47    |  \genblk1[17].fdiv  |clkDiv_8                        |     2|
+|48    |  \genblk1[18].fdiv  |clkDiv_9                        |     2|
+|49    |  \genblk1[19].fdiv  |clkDiv_10                       |     2|
+|50    |  \genblk1[1].fdiv   |clkDiv_11                       |     2|
+|51    |  \genblk1[20].fdiv  |clkDiv_12                       |     2|
+|52    |  \genblk1[21].fdiv  |clkDiv_13                       |     2|
+|53    |  \genblk1[22].fdiv  |clkDiv_14                       |     2|
+|54    |  \genblk1[23].fdiv  |clkDiv_15                       |     2|
+|55    |  \genblk1[24].fdiv  |clkDiv_16                       |     2|
+|56    |  \genblk1[2].fdiv   |clkDiv_17                       |     2|
+|57    |  \genblk1[3].fdiv   |clkDiv_18                       |     2|
+|58    |  \genblk1[4].fdiv   |clkDiv_19                       |     2|
+|59    |  \genblk1[5].fdiv   |clkDiv_20                       |     2|
+|60    |  \genblk1[6].fdiv   |clkDiv_21                       |     2|
+|61    |  \genblk1[7].fdiv   |clkDiv_22                       |     2|
+|62    |  \genblk1[8].fdiv   |clkDiv_23                       |     2|
+|63    |  \genblk1[9].fdiv   |clkDiv_24                       |     2|
+|64    |  lname1             |Pixel_On_Text2__parameterized11 |     5|
+|65    |    FontRom          |Font_Rom_30                     |     1|
+|66    |  lname2             |Pixel_On_Text2__parameterized12 |     4|
+|67    |  lname3             |Pixel_On_Text2__parameterized13 |     9|
+|68    |    FontRom          |Font_Rom_29                     |     1|
+|69    |  lname4             |Pixel_On_Text2__parameterized14 |     4|
+|70    |  lname5             |Pixel_On_Text2__parameterized15 |     5|
+|71    |    FontRom          |Font_Rom_28                     |     1|
+|72    |  no1                |Pixel_On_Text2__parameterized16 |     4|
+|73    |  no2                |Pixel_On_Text2__parameterized17 |     5|
+|74    |    FontRom          |Font_Rom_27                     |     1|
+|75    |  no3                |Pixel_On_Text2__parameterized18 |     4|
+|76    |  no4                |Pixel_On_Text2__parameterized19 |     4|
+|77    |    FontRom          |Font_Rom_26                     |     1|
+|78    |  no5                |Pixel_On_Text2__parameterized20 |     4|
+|79    |  press_spacebar     |Pixel_On_Text2__parameterized5  |     5|
+|80    |    FontRom          |Font_Rom                        |     1|
+|81    |  title              |Pixel_On_Text2__parameterized4  |     6|
+|82    |  uart_fifo          |uart_fifo                       |   544|
+|83    |    rx_fifo          |fifo                            |   253|
+|84    |    tx_fifo          |fifo_25                         |   125|
+|85    |    uart_inst        |uart                            |   165|
++------+---------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1213.137 ; gain = 932.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1213.137 ; gain = 587.465
+Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 1213.137 ; gain = 932.301
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 286 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1213.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+385 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1213.137 ; gain = 945.305
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1213.137 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Palinee/Desktop/project/project.runs/synth_1/Top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_utilization_synth.rpt -pb Top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 29 17:14:05 2020...
